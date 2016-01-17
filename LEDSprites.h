@@ -1,5 +1,8 @@
 #ifndef LEDSprites_h
 #define LEDSprites_h
+#include "lib/fastled/firmware/FastLED.h"
+FASTLED_USING_NAMESPACE
+#include "lib/ledmatrix/LEDMatrix.h"
 
 #define B8_1B__(x) (uint8_t)(((x&0x10000000LU)>>21)+((x&0x01000000LU)>>18)+((x&0x00100000LU)>>15)+((x&0x00010000LU)>>12)+ \
                    ((x&0x00001000LU)>>9)+((x&0x00000100LU)>>6)+((x&0x00000010LU)>>3)+((x&0x00000001LU)))

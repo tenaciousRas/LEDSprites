@@ -7,9 +7,8 @@ FastLED v3.1 library by Daniel Garcia and Mark Kriegsmann.
 Written & tested on a Teensy 3.1 using Arduino V1.0.5r2 & teensyduino V1.20
 */
 
-#include "FastLED.h"
-#include "LEDMatrix.h"
 #include "LEDSprites.h"
+FASTLED_USING_NAMESPACE
 
 cSprite::cSprite(uint16_t Width, uint16_t Height, const uint8_t *Data, uint8_t NumFrames, SpriteNumBits_t BitsPixel, const struct CRGB *ColTable, const uint8_t *Mask)
 {
