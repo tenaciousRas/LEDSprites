@@ -2,6 +2,6 @@
   "name": "LEDSprites",
   "author": "Aaron Liddiment, Free Beachler",
   "license": "",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Aims to provide a flexible way of displaying sprites on LED displays using the FastLED library."
 }
