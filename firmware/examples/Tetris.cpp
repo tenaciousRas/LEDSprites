@@ -9,12 +9,12 @@
 // Teensy pin 3 to DType pin 6
 // Teensy Gnd to DType pin 8
 
-#include <FastLED.h>
+#include <FastLED/FastLED.h>
 
-#include <LEDMatrix.h>
-#include <LEDSprites.h>
-#include <LEDText.h>
-#include <FontMatrise.h>
+#include <LEDMatrix/LEDMatrix.h>
+#include <LEDSprites/LEDSprites.h>
+#include <LEDText/LEDText.h>
+#include <LEDText/FontMatrise.h>
 
 // Change the next 6 defines to match your matrix type and size
 
@@ -40,7 +40,7 @@ cLEDMatrix<-MATRIX_WIDTH, MATRIX_HEIGHT, MATRIX_TYPE> leds;
 #define DOWN_PIN    6
 
 
-const uint8_t TetrisIData[] = 
+const uint8_t TetrisIData[] =
 {
   // Frame 1
   B8_3BIT(00000000),
@@ -63,7 +63,7 @@ const uint8_t TetrisIData[] =
   B8_3BIT(10000000),
   B8_3BIT(10000000)
 };
-const uint8_t TetrisIMask[] = 
+const uint8_t TetrisIMask[] =
 {
   // Frame 1
   B8_1BIT(00000000),
@@ -86,7 +86,7 @@ const uint8_t TetrisIMask[] =
   B8_1BIT(10000000),
   B8_1BIT(10000000)
 };
-const uint8_t TetrisJData[] = 
+const uint8_t TetrisJData[] =
 {
   // Frame 1
   B8_3BIT(00000000),
@@ -109,7 +109,7 @@ const uint8_t TetrisJData[] =
   B8_3BIT(20000000),
   B8_3BIT(20000000)
 };
-const uint8_t TetrisJMask[] = 
+const uint8_t TetrisJMask[] =
 {
   // Frame 1
   B8_1BIT(00000000),
@@ -132,7 +132,7 @@ const uint8_t TetrisJMask[] =
   B8_1BIT(10000000),
   B8_1BIT(10000000)
 };
-const uint8_t TetrisLData[] = 
+const uint8_t TetrisLData[] =
 {
   // Frame 1
   B8_3BIT(00000000),
@@ -155,7 +155,7 @@ const uint8_t TetrisLData[] =
   B8_3BIT(30000000),
   B8_3BIT(33000000)
 };
-const uint8_t TetrisLMask[] = 
+const uint8_t TetrisLMask[] =
 {
   // Frame 1
   B8_1BIT(00000000),
@@ -178,7 +178,7 @@ const uint8_t TetrisLMask[] =
   B8_1BIT(10000000),
   B8_1BIT(11000000)
 };
-const uint8_t TetrisOData[] = 
+const uint8_t TetrisOData[] =
 {
   // Frame 1
   B8_3BIT(00000000),
@@ -201,7 +201,7 @@ const uint8_t TetrisOData[] =
   B8_3BIT(44000000),
   B8_3BIT(44000000)
 };
-const uint8_t TetrisOMask[] = 
+const uint8_t TetrisOMask[] =
 {
   // Frame 1
   B8_1BIT(00000000),
@@ -224,7 +224,7 @@ const uint8_t TetrisOMask[] =
   B8_1BIT(11000000),
   B8_1BIT(11000000)
 };
-const uint8_t TetrisSData[] = 
+const uint8_t TetrisSData[] =
 {
   // Frame 1
   B8_3BIT(00000000),
@@ -247,7 +247,7 @@ const uint8_t TetrisSData[] =
   B8_3BIT(55000000),
   B8_3BIT(05000000)
 };
-const uint8_t TetrisSMask[] = 
+const uint8_t TetrisSMask[] =
 {
   // Frame 1
   B8_1BIT(00000000),
@@ -270,7 +270,7 @@ const uint8_t TetrisSMask[] =
   B8_1BIT(11000000),
   B8_1BIT(01000000)
 };
-const uint8_t TetrisTData[] = 
+const uint8_t TetrisTData[] =
 {
   // Frame 1
   B8_3BIT(00000000),
@@ -293,7 +293,7 @@ const uint8_t TetrisTData[] =
   B8_3BIT(66000000),
   B8_3BIT(60000000)
 };
-const uint8_t TetrisTMask[] = 
+const uint8_t TetrisTMask[] =
 {
   // Frame 1
   B8_1BIT(00000000),
@@ -316,7 +316,7 @@ const uint8_t TetrisTMask[] =
   B8_1BIT(11000000),
   B8_1BIT(10000000)
 };
-const uint8_t TetrisZData[] = 
+const uint8_t TetrisZData[] =
 {
   // Frame 1
   B8_3BIT(00000000),
@@ -339,7 +339,7 @@ const uint8_t TetrisZData[] =
   B8_3BIT(77000000),
   B8_3BIT(70000000)
 };
-const uint8_t TetrisZMask[] = 
+const uint8_t TetrisZMask[] =
 {
   // Frame 1
   B8_1BIT(00000000),
@@ -721,4 +721,3 @@ void loop()
     FastLED.show();
   }
 }
-

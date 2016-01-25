@@ -1,7 +1,7 @@
-#include <FastLED.h>
+#include <FastLED/FastLED.h>
 
-#include <LEDMatrix.h>
-#include <LEDSprites.h>
+#include <LEDMatrix/LEDMatrix.h>
+#include <LEDSprites/LEDSprites.h>
 
 // Change the next 6 defines to match your matrix type and size
 
@@ -18,7 +18,7 @@ cLEDMatrix<MATRIX_WIDTH, MATRIX_HEIGHT, MATRIX_TYPE> leds;
 
 #define SQUARE_WIDTH    7
 #define SQUARE_HEIGHT   7
-const uint8_t SquareData[] = 
+const uint8_t SquareData[] =
 {
   B8_2BIT(11111110),
   B8_2BIT(12222210),
@@ -28,7 +28,7 @@ const uint8_t SquareData[] =
   B8_2BIT(12222210),
   B8_2BIT(11111110)
 };
-const uint8_t SquareMask[] = 
+const uint8_t SquareMask[] =
 {
   B8_2BIT(11111110),
   B8_2BIT(11111110),

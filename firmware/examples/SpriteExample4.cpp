@@ -1,7 +1,7 @@
-#include <FastLED.h>
+#include <FastLED/FastLED.h>
 
-#include <LEDMatrix.h>
-#include <LEDSprites.h>
+#include <LEDMatrix/LEDMatrix.h>
+#include <LEDSprites/LEDSprites.h>
 
 // Change the next 6 defines to match your matrix type and size
 
@@ -24,7 +24,7 @@ cLEDSprites Sprites(&leds);
 #define PINKY_FRAMES  2
 
 #define POWER_PILL_SIZE	4
-const uint8_t PowerPillData[] = 
+const uint8_t PowerPillData[] =
 {
   B8_1BIT(01100000),
   B8_1BIT(11110000),
@@ -33,7 +33,7 @@ const uint8_t PowerPillData[] =
 };
 const struct CRGB PowerPillColTab[] =  {  CRGB(48, 48, 255)  };
 
-const uint8_t PacmanRightData[] = 
+const uint8_t PacmanRightData[] =
 {
   // Pacman Open
   B8_2BIT(00021112),B8_2BIT(00000000),
@@ -69,7 +69,7 @@ const uint8_t PacmanRightData[] =
   B8_2BIT(00111111),B8_2BIT(10000000),
   B8_2BIT(00021112),B8_2BIT(00000000)
 };
-const uint8_t PacmanRightMask[] = 
+const uint8_t PacmanRightMask[] =
 {
   // Pacman Open
   B8_1BIT(00011111),B8_1BIT(00000000),
@@ -107,7 +107,7 @@ const uint8_t PacmanRightMask[] =
 };
 const struct CRGB PacmanRightColTab[] =  {  CRGB(255, 255, 0), CRGB(100, 100, 0), CRGB(255, 255, 255)  };
 
-const uint8_t PinkyData[] = 
+const uint8_t PinkyData[] =
 {
   // Pinky Frame 1
   B8_2BIT(00001110),B8_2BIT(00000000),
@@ -132,7 +132,7 @@ const uint8_t PinkyData[] =
   B8_2BIT(11111111),B8_2BIT(11100000),
   B8_2BIT(10011011),B8_2BIT(00100000),
 };
-const uint8_t PinkyMask[] = 
+const uint8_t PinkyMask[] =
 {
   // Pinky Frame 1
   B8_1BIT(00001110),B8_1BIT(00000000),
@@ -159,7 +159,7 @@ const uint8_t PinkyMask[] =
 };
 const struct CRGB PinkyColTab[] =  {  CRGB(255, 0, 0), CRGB(255, 255, 255), CRGB(0, 0, 255)  };
 
-const uint8_t PacmanLeftData[] = 
+const uint8_t PacmanLeftData[] =
 {
   // Pacman Open
   B8_2BIT(00021112),B8_2BIT(00000000),
@@ -195,7 +195,7 @@ const uint8_t PacmanLeftData[] =
   B8_2BIT(00111111),B8_2BIT(10000000),
   B8_2BIT(00021112),B8_2BIT(00000000)
 };
-const uint8_t PacmanLeftMask[] = 
+const uint8_t PacmanLeftMask[] =
 {
   // Pacman Open
   B8_1BIT(00011111),B8_1BIT(00000000),
@@ -233,7 +233,7 @@ const uint8_t PacmanLeftMask[] =
 };
 const struct CRGB PacmanLeftColTab[] =  {  CRGB(255, 255, 0), CRGB(100, 100, 0), CRGB(255, 255, 255)  };
 
-const uint8_t GhostData[] = 
+const uint8_t GhostData[] =
 {
   // Ghost Frame 1
   B8_2BIT(00001110),B8_2BIT(00000000),
@@ -258,7 +258,7 @@ const uint8_t GhostData[] =
   B8_2BIT(11111111),B8_2BIT(11100000),
   B8_2BIT(10011011),B8_2BIT(00100000)
 };
-const uint8_t GhostMask[] = 
+const uint8_t GhostMask[] =
 {
   // Ghost Frame 1
   B8_1BIT(00001110),B8_1BIT(00000000),
@@ -285,7 +285,7 @@ const uint8_t GhostMask[] =
 };
 const struct CRGB GhostColTab[] =  {  CRGB(0, 0, 255), CRGB(255, 255, 255), CRGB(255, 90, 120)  };
 
-const uint8_t S200Data[] = 
+const uint8_t S200Data[] =
 {
   B8_1BIT(00000000),B8_1BIT(00000000),
   B8_1BIT(01000100),B8_1BIT(01000000),
@@ -300,7 +300,7 @@ const uint8_t S200Data[] =
 };
 const struct CRGB S200ColTab[] =  {  CRGB(0, 192, 255)  };
 
-const uint8_t EyesData[] = 
+const uint8_t EyesData[] =
 {
   B8_2BIT(00000000),B8_2BIT(00000000),
   B8_2BIT(00000000),B8_2BIT(00000000),
@@ -313,7 +313,7 @@ const uint8_t EyesData[] =
   B8_2BIT(00000000),B8_2BIT(00000000),
   B8_2BIT(00000000),B8_2BIT(00000000)
 };
-const uint8_t EyesMask[] = 
+const uint8_t EyesMask[] =
 {
   B8_1BIT(00000000),B8_1BIT(00000000),
   B8_1BIT(00000000),B8_1BIT(00000000),

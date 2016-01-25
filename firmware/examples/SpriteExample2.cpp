@@ -1,7 +1,7 @@
-#include <FastLED.h>
+#include <FastLED/FastLED.h>
 
-#include <LEDMatrix.h>
-#include <LEDSprites.h>
+#include <LEDMatrix/LEDMatrix.h>
+#include <LEDSprites/LEDSprites.h>
 
 // Change the next 6 defines to match your matrix type and size
 
@@ -18,7 +18,7 @@ cLEDMatrix<MATRIX_WIDTH, MATRIX_HEIGHT, MATRIX_TYPE> leds;
 
 #define RAINBOW_WIDTH    16
 #define RAINBOW_HEIGHT   10
-const uint8_t RainbowData[] = 
+const uint8_t RainbowData[] =
 {
   B8_3BIT(01111111),B8_3BIT(11111110),
   B8_3BIT(11222222),B8_3BIT(22222211),
@@ -31,7 +31,7 @@ const uint8_t RainbowData[] =
   B8_3BIT(12345670),B8_3BIT(07654321),
   B8_3BIT(12345670),B8_3BIT(07654321),
 };
-const uint8_t RainbowMask[] = 
+const uint8_t RainbowMask[] =
 {
   B8_1BIT(01111111),B8_1BIT(11111110),
   B8_1BIT(11111111),B8_1BIT(11111111),
@@ -48,7 +48,7 @@ struct CRGB RainbowColTable[7] = { CHSV(216, 255, 255), CHSV(180, 255, 255), CHS
 
 #define SHAPE_WIDTH    5
 #define SHAPE_HEIGHT   5
-const uint8_t ShapeData[] = 
+const uint8_t ShapeData[] =
 {
   B8_1BIT(00100000),
   B8_1BIT(01110000),

@@ -1,7 +1,7 @@
-#include <FastLED.h>
+#include <FastLED/FastLED.h>
 
-#include <LEDMatrix.h>
-#include <LEDSprites.h>
+#include <LEDMatrix/LEDMatrix.h>
+#include <LEDSprites/LEDSprites.h>
 
 // Change the next 6 defines to match your matrix type and size
 
@@ -18,7 +18,7 @@ cLEDMatrix<MATRIX_WIDTH, MATRIX_HEIGHT, MATRIX_TYPE> leds;
 
 #define SHAPE_WIDTH    5
 #define SHAPE_HEIGHT   5
-const uint8_t ShapeData[] = 
+const uint8_t ShapeData[] =
 {
   B8_1BIT(00100000),
   B8_1BIT(01110000),
